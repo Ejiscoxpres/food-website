@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
+import { CiMenuBurger } from "react-icons/ci";
 
 
-import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -23,7 +23,7 @@ const Navbar = () => {
         </button>
       </ul>
 
-      <AiOutlineMenu className="md:hidden text-accent" size={30} />
+      <CiMenuBurger  className="md:hidden text-orange-500" size={30} />
     </div>
   </nav>
   )
