@@ -1,6 +1,5 @@
 import React from 'react'
 import Dash from './dash'
-import { ImageResponse } from 'next/server'
 import Image from 'next/image'
 
 const Feature = () => {
@@ -23,7 +22,7 @@ const Feature = () => {
         <div className="w-fit mx-auto self-end">
           <Image
             className="w-[100%] max-w-[400px] sm:max-w-full h-auto shadow-2xl"
-            src="/grid-1.jpg"
+            src="/grid-1.jpeg"
             width={300}
             height={600}
             alt="grid image"
@@ -31,7 +30,7 @@ const Feature = () => {
 
           <div className="space-y-4">
             <Dash />
-            <h2 className="font-medium text-xl">Tillapia Salad</h2>
+            <h2 className="font-medium text-xl">Shrimp Salad</h2>
             <p className="text-gray-700 text-[14px] xl:text-[16px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Dignissimos, nesciunt distinctio.
@@ -40,8 +39,8 @@ const Feature = () => {
         </div>
         <div className="w-fit mx-auto">
           <Image
-            className="w-[100%] max-w-[400px] sm:max-w-full h-auto shadow-2xl"
-            src="/grid.jpeg"
+            className="w-[100%] max-w-[300px] sm:max-w-full h-auto shadow-2xl"
+            src="/grid-2.jpg"
             width={500}
             height={900}
             alt="grid image"
