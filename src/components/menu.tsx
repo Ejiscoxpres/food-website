@@ -1,6 +1,61 @@
 import React from 'react'
 import Dash from './dash'
 import Image from 'next/image'
+import MenuCard from './MenuCard'
+
+
+const menuData = [
+  {
+    img: "/cake.jpeg",
+    title: "Delicious Cake",
+    desc: "Towerig with buttercream and srawberry for soft bite and flavourful taste",
+    price: "$26.50",
+  },
+  {
+    img: "/grid-3.jpg",
+    title: "Italian Pizza",
+    desc: "very delicious food with high content of protein and calcium",
+    price: "$20",
+  },
+
+
+  {
+    img: "/meat-fish.jpeg",
+    title: "Italian Pizza",
+    desc: "2x tuna sahimi, 1x noodles",
+    price: "$29.50",
+  },
+  {
+    img: "/pizza.jpeg",
+    title: "Ghanaian Pizza",
+    desc: "Very tantalizing",
+    price: "$28.50",
+  },
+  {
+    img: "/grid-1.jpeg",
+    title: "Italian Pizza",
+    desc: "2x tuna sahimi, 1x noodles",
+    price: "$29.50",
+  },
+  {
+    img: "/burger.jpg",
+    title: "Patty Burger",
+    desc: "A culinary masterpiece  with a tender and juicy ground meat patty, typically beef and chicken",
+    price: "$35.50",
+  },
+  {
+    img: "/susage-pizza.png",
+    title: "Italian Pizza",
+    desc: "2x tuna sahimi, 1x noodles",
+    price: "$29.50",
+  },
+  {
+    img: "/coffe-cake.jpg",
+    title: "Coffee Cake",
+    desc: "cake with a sweet, cinnamon-infused flavor and streusel top made from flour, butter, and sugar",
+    price: "$19.50",
+  },
+]
 
 const menu = () => {
   return (
@@ -39,6 +94,18 @@ const menu = () => {
             height={500}
             alt="dish"
           />
+        </div>
+
+        <div className="grid w-fit mx-auto sm:grid-cols-2 gap-4">
+          {menuData.map((item, index) => (
+            <MenuCard
+              key={index}
+              img={item.img}
+              title={item.title}
+              desc={item.desc}
+              price={item.price}
+            />
+          ))}
         </div>
     </div>
 
