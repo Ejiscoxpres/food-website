@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="container pt-6">
     <div className="flex justify-between items-center">
-      <Image src="/grid-pizza.png" width={50} height={50} alt="logo" />
+      <Image src="/logo.jpeg" width={70} height={70} alt="logo" />
       <ul className="md:flex gap-4 items-center font-semibold text-[14px] hidden text-violet-800">
         <li>Home</li>
         <li>About</li>
@@ -23,7 +23,7 @@ const Navbar = () => {
         </button>
       </ul>
 
-      <CiMenuBurger  className="md:hidden text-orange-500" size={30} />
+      <CiMenuBurger  className="md:hidden text-black" size={30} />
     </div>
   </nav>
   )

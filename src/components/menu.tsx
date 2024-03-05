@@ -89,7 +89,7 @@ const menu = () => {
         <div className="w-fit mx-auto">
           <Image
             className="w-[100%] max-w-[400px] h-auto"
-            src="/meat.jpeg"
+            src="/hero.jpeg"
             width={500}
             height={500}
             alt="dish"
